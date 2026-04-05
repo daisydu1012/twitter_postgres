@@ -1,4 +1,8 @@
 #!/bin/bash
+export PGHOST=localhost
+export PGPORT=25431
+export PGUSER=postgres
+export PGPASSWORD=pass
 
 failed=false
 
