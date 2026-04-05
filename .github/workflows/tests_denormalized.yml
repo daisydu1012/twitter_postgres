@@ -20,4 +20,4 @@ jobs:
         docker ps -a
         sleep 60
         sh load_tweets.sh
-        docker compose exec -T pg_denormalized ./run_tests.sh
+        PGPORT=25432 bash run_tests.sh
