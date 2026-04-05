@@ -18,6 +18,6 @@ jobs:
         git submodule update
         docker compose up -d --build
         docker ps -a
-        sleep 20
+        sleep 60
         sh load_tweets.sh
         docker compose exec -T pg_denormalized ./run_tests.sh
